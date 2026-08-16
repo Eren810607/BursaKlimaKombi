@@ -29,11 +29,11 @@ function App() {
     {
       icon: <AddCallIcon />,
       name: 'Arama Yap',
-      phone: '905XXXXXXXXX'
+      phone: '905464895158'
     },
     {
       icon: <WhatsAppIcon />,
-      phone: '905XXXXXXXXX',
+      phone: '905464895158',
       name: 'Whatsapp Mesaj',
       message: 'Merhabalar, Size İnternet Siteniz Üzerinden Ulaşıyorum. Yardımcı Olma Şansınız Var Mı Acaba?'
     },
@@ -51,7 +51,7 @@ function App() {
 
 
   return (
-    <Router basename="/BursaKlimaKombi">
+    <Router>
       <Header />
 
       <Routes>
