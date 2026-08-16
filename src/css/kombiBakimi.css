@@ -21,16 +21,22 @@
 }
 
 .KombiBakimiTexts {
-    position: relative;
+    position: absolute;
     z-index: 1;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 190px;
+
     color: white;
     font-weight: bold;
+    text-align: center;
+    width: 100%;
 }
 
 
@@ -177,10 +183,6 @@
 
     }
 
-    .KombiBakimiTexts {
-        padding-top: 50px;
-
-    }
 
 
     .KombiBakimiH1 {
@@ -218,5 +220,17 @@
 
     /* Slider Bitti*/
 
+
+
+    .KombiBakimiInfo {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .KombiBakimiInfoBox {
+        width: 100%;
+        box-sizing: border-box;
+    }
 
 }

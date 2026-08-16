@@ -6,13 +6,8 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import { createTheme } from '@mui/material/styles';
+import { useNavigate } from 'react-router-dom';
 import "../css/home.css";
-
-
-
-
-
 
 
 const cards = [
@@ -20,24 +15,27 @@ const cards = [
         id: 1,
         title: 'Klima Servisi',
         description: 'Klima bakım, onarım ve arıza tespit hizmetleri.',
+        link: '/klima-bakimi',
     },
     {
         id: 2,
         title: 'Kombi & Petek',
         description: 'Kombi bakımı, arıza onarımı ve petek temizleme.',
+        link: '/kombi-bakimi',
     },
     {
         id: 3,
         title: 'Beyaz Eşya Servisi',
         description: 'Beyaz eşya arıza, onarım ve parça değişimi.',
+        link: '/beyaz-esya-tamiri',
     },
 ];
 
 
-
-
 function SelectActionCard() {
-    const [selectedCard, setSelectedCard] = React.useState(0);
+
+    const navigate = useNavigate();
+
     return (
         <Box
             sx={{
@@ -49,47 +47,59 @@ function SelectActionCard() {
                 gap: 4,
             }}
         >
-            {cards.map((card, index) => (
+
+            {cards.map((card) => (
+
                 <Card key={card.id}>
 
-
                     <CardActionArea
-                        onClick={() => setSelectedCard(index)}
-                        data-active={selectedCard === index ? '' : undefined}
+                        onClick={() => navigate(card.link)}
                         sx={{
                             height: '100%',
-
-                            '&[data-active]': {
-                                backgroundColor: 'action.selected',
-
-                                '&:hover': {
-                                    backgroundColor: 'action.selectedHover',
-
-                                },
-                            },
                         }}
                     >
 
+                        <CardContent
+                            sx={{
+                                height: '100%',
+                                backgroundColor: '#c5e7e9',
+                            }}
+                        >
 
-                        <CardContent sx={{
-                            height: '100%', backgroundColor: '#c5e7e9',
-
-                        }}>
                             <Typography variant="h5" component="div">
                                 {card.title}
                             </Typography>
-                            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+
+                            <Typography
+                                variant="body2"
+                                sx={{ color: 'text.secondary' }}
+                            >
                                 {card.description}
                             </Typography>
+
                             <br />
-                            <Button color="primary" variant="outlined" sx={{ backgroundColor: "#000", color: "#fff9f9", borderColor: '#fff' }}>Detay<ChevronRightIcon /></Button>
+
+                            <Button
+                                color="primary"
+                                variant="outlined"
+                                sx={{
+                                    backgroundColor: "#000",
+                                    color: "#fff9f9",
+                                    borderColor: '#fff'
+                                }}
+                            >
+                                Detay
+                                <ChevronRightIcon />
+                            </Button>
+
                         </CardContent>
 
-
-
                     </CardActionArea>
+
                 </Card>
+
             ))}
+
         </Box>
     );
 }

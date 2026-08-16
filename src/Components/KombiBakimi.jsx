@@ -19,7 +19,7 @@ function KombiBakimi() {
                 <div className='KombiBakimiTexts'>
 
                     <h1 className='KombiBakimiH1'>
-                        Kombi Bakımı & Temizleme
+                        Kombi Bakımı
                     </h1>
 
                     <hr className='KombiBakimiHr' />

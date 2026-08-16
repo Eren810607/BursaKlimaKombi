@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import './app.css'
 import Box from '@mui/material/Box';
 import SpeedDial from '@mui/material/SpeedDial';
@@ -51,7 +51,7 @@ function App() {
 
 
   return (
-    <Router>
+    <Router basename="/BursaKlimaKombi">
       <Header />
 
       <Routes>

@@ -14,9 +14,8 @@ function KlimaBakimi() {
                 <div className='KlimaBakimiTexts'>
 
                     <h1 className='KlimaBakimiH1'>
-                        Klima Bakımı & Temizleme
+                        Klima Bakımı
                     </h1>
-
                     <hr className='KlimaBakimiHr' />
 
                     <Button

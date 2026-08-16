@@ -21,16 +21,22 @@
 }
 
 .KlimaBakimiTexts {
-    position: relative;
+    position: absolute;
     z-index: 1;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 190px;
+
     color: white;
     font-weight: bold;
+    text-align: center;
+    width: 100%;
 }
 
 
@@ -112,10 +118,6 @@
 
     }
 
-    .KlimaBakimiTexts {
-        padding-top: 50px;
-
-    }
 
 
     .KlimaBakimiH1 {
