@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.Footer {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    min-height: 330px;
+
+    margin-top: 100px;
+    padding: 45px 6% 80px;
+
+    background-color: #232323;
+    color: white;
+}
+
+
+/* =========================
+   LOGO + TANITIM
+========================= */
+
+.FooterPromotion {
+    width: 35%;
+    max-width: 420px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+}
+
+
+.FooterBrand {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.FooterLogo {
+    width: 48px;
+    height: 48px;
+
+    object-fit: contain;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+}
+
+
+.FooterPromTitle {
+    margin: 0;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    color: white;
+}
+
+
+.FooterPromHr {
+    width: 180px;
+
+    margin: 12px 0 18px;
+
+    border: 0;
+    border-top: 2px solid #88b0c3;
+}
+
+
+.PromotionText {
+    max-width: 390px;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #d0d0d0;
+}
+
+
+/* =========================
+   LİNK KOLONLARI
+========================= */
+
+.FooterLinksDiv,
+.FooterContact {
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    color: white;
+}
+
+
+.FooterLinksHr {
+    width: 170px;
+
+    margin: 12px 0 15px;
+
+    border: 0;
+    border-top: 2px solid #88b0c3;
+}
+
+
+.FooterList {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+
+.FooterLinks,
+.FooterSupportLinks {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    margin-bottom: 9px;
+
+    list-style: none;
+
+    font-size: 15px;
+}
+
+
+.FooterLinks svg,
+.FooterSupportLinks svg {
+    font-size: 21px;
+
+    color: #88b0c3;
+
+    transition: 0.2s;
+}
+
+
+.FooterLinks a,
+.FooterSupportLinks a {
+    color: #d5d5d5;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+
+.FooterLinks:hover a,
+.FooterSupportLinks:hover a {
+    color: #88b0c3;
+}
+
+
+.FooterLinks:hover svg,
+.FooterSupportLinks:hover svg {
+    transform: translateX(3px);
+}
+
+
+/* =========================
+   ALT KISIM
+========================= */
+
+.FooterEndHr {
+    position: absolute;
+
+    left: 6%;
+    right: 6%;
+    bottom: 20px;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.FooterEndHr hr {
+    width: 100%;
+
+    margin: 0 auto 12px;
+
+    border: 0;
+    border-top: 1px solid #555;
+}
+
+
+.FooterEndHr p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #aaa;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 769px) and (max-width: 1100px) {
+
+    .Footer {
+        padding-left: 4%;
+        padding-right: 4%;
+
+        gap: 25px;
+    }
+
+
+    .FooterPromotion {
+        width: 38%;
+    }
+
+
+    .FooterLinksDiv,
+    .FooterContact {
+        width: 28%;
+    }
+
+}
+
+
+/* =========================
+   MOBİL
+========================= */
+
+@media (min-width: 300px) and (max-width: 768px) {
+
+    .Footer {
+        flex-direction: column;
+
+        min-height: auto;
+
+        margin-top: 70px;
+
+        padding: 40px 25px 85px;
+
+        gap: 35px;
+    }
+
+
+    /* LOGO */
+
+    .FooterPromotion {
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+    }
+
+
+    .FooterBrand {
+        gap: 10px;
+    }
+
+
+    .FooterLogo {
+        width: 45px;
+        height: 45px;
+    }
+
+
+    .FooterPromTitle {
+        font-size: 21px;
+    }
+
+
+    .FooterPromHr {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+
+    .PromotionText {
+        width: 100%;
+        max-width: none;
+
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* LİNKLER */
+
+    .FooterLinksDiv,
+    .FooterContact {
+        width: 100%;
+
+        align-items: flex-start;
+
+        margin: 0;
+    }
+
+
+    .FooterLinksHr {
+        margin-top: 10px;
+        margin-bottom: 13px;
+    }
+
+
+    .FooterLinks,
+    .FooterSupportLinks {
+        margin-bottom: 9px;
+    }
+
+
+    .FooterLinks a,
+    .FooterSupportLinks a {
+        font-size: 15px;
+    }
+
+
+    /* ALT */
+
+    .FooterEndHr {
+        left: 25px;
+        right: 25px;
+        bottom: 18px;
+    }
+
+
+    .FooterEndHr p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================
+   ÇOK KÜÇÜK EKRAN
+========================= */
+
+@media (max-width: 299px) {
+
+    .Footer {
+        flex-direction: column;
+
+        padding: 35px 15px 80px;
+
+        gap: 30px;
+    }
+
+
+    .FooterPromotion,
+    .FooterLinksDiv,
+    .FooterContact {
+        width: 100%;
+    }
+
+
+    .FooterLogo {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .FooterPromTitle {
+        font-size: 19px;
+    }
+
+
+    .PromotionText {
+        font-size: 13px;
+    }
+
+
+    .FooterLinks a,
+    .FooterSupportLinks a {
+        font-size: 14px;
+    }
+
+
+    .FooterEndHr {
+        left: 15px;
+        right: 15px;
+    }
+
+}

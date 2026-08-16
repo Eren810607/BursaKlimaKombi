@@ -1,0 +1,351 @@
+.AboutImg {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    width: 100%;
+}
+
+.AboutImg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("../images/aboutImage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: blur(5px);
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+
+.AboutImgTexts {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 190px;
+}
+
+
+.AboutH1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 33px;
+}
+
+
+.AboutHr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 13px;
+    width: 200px;
+}
+
+
+.AboutDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+
+.desktopBreak {
+    display: none;
+}
+
+.desktopBreak2 {
+    display: inline;
+}
+
+
+/* =========================
+   BİLGİ KUTULARI
+========================= */
+
+.AboutInfo {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 25px;
+
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 30px;
+}
+
+
+.AboutInfoBox {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+    background-color: #0e0d0d;
+    color: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.AboutInfoBox:hover {
+    box-shadow: 0px 0px 15px 2px #88b0c3;
+    transition: 0.3s;
+}
+
+
+.AboutInfoBox h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+.AboutInfoBox p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HİZMET ALANLARI
+========================= */
+
+.AboutServices {
+    width: 100%;
+
+    padding: 50px 0;
+
+    background-color: #f7f7f7;
+
+    box-sizing: border-box;
+}
+
+
+.AboutServicesCards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    padding: 0 30px;
+
+    box-sizing: border-box;
+}
+
+
+.AboutServiceCard {
+    flex: 1 1 400px;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #88b0c3;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.AboutServiceCard:hover {
+    box-shadow: 0px 0px 15px 2px black;
+    transition: 0.3s;
+}
+
+
+.AboutServiceCard h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+.AboutServiceCard p {
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+
+.AboutServicesHr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    margin-left: 40%;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.AboutCTA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 30px;
+    box-sizing: border-box;
+}
+
+
+.AboutCTA h2 {
+    margin: 0;
+
+    font-size: 30px;
+}
+
+
+.AboutCTA p {
+    max-width: 650px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   MOBİL
+========================= */
+
+@media (min-width: 300px) and (max-width: 992px) {
+
+    .AboutImg {
+        height: 300px;
+        width: 100%;
+    }
+
+
+    .AboutImgTexts {
+        padding-top: 50px;
+    }
+
+
+    .AboutH1 {
+        padding-top: 0;
+    }
+
+
+    .AboutDiv {
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+
+    /* BİLGİ KUTULARI */
+
+    .AboutInfo {
+        flex-direction: column;
+        gap: 20px;
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+
+
+    .AboutInfoBox {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+
+    /* HİZMET KARTLARI */
+
+    .AboutServices {
+        padding: 40px 0;
+    }
+
+
+    .AboutServicesCards {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+
+    .AboutServiceCard {
+        width: 100%;
+        max-width: none;
+        flex: none;
+        padding: 25px 20px;
+    }
+
+
+    /* CTA */
+
+    .AboutCTA {
+        padding: 60px 20px;
+    }
+
+
+    .AboutCTA h2 {
+        font-size: 24px;
+    }
+
+
+    .AboutCTA p {
+        font-size: 15px;
+    }
+
+
+    .desktopBreak {
+        display: inline;
+    }
+
+
+    .desktopBreak2 {
+        display: inline;
+    }
+
+}
+
+
+/* =========================
+   ÇOK KÜÇÜK EKRAN
+========================= */
+
+@media (min-width: 200px) and (max-width: 300px) {
+
+    .AboutImg {
+        height: 300px;
+        width: 100%;
+    }
+
+
+    .AboutDiv {
+        padding: 0 15px;
+    }
+
+
+    .AboutInfo {
+        padding: 0 15px;
+    }
+
+
+    .AboutServicesCards {
+        padding: 0 15px;
+    }
+
+
+    .AboutCTA {
+        padding: 50px 15px;
+    }
+
+}

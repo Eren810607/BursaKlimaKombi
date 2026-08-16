@@ -1,0 +1,222 @@
+.KombiBakimiImg {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    width: 100%;
+}
+
+.KombiBakimiImg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("../images/kombiBakimi.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: blur(5px);
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+.KombiBakimiTexts {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 190px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.KombiBakimiH1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13px;
+    color: black;
+}
+
+.KombiBakimiHr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13px;
+    width: 200px;
+
+}
+
+
+
+.KombiBakimiDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+.desktopBreak {
+    display: inline;
+}
+
+.desktopBreak2 {
+    display: inline;
+}
+
+
+/* SLİCK İLE SLİDER:*/
+
+
+.KombiBakimiSlider {
+    width: 100%;
+    margin: 70px 0;
+    overflow: hidden;
+}
+
+.KombiSlide {
+    min-height: 350px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px;
+    background-color: #88b0c3;
+    color: white;
+    box-sizing: border-box;
+}
+
+.KombiSlide span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.KombiSlide h2 {
+    font-size: 36px;
+    margin: 0 0 20px 0;
+}
+
+.KombiSlide p {
+    max-width: 700px;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.KombiBakimiSlider .slick-dots {
+    bottom: 20px;
+}
+
+.KombiBakimiSlider .slick-prev {
+    left: 25px;
+    z-index: 2;
+}
+
+.KombiBakimiSlider .slick-next {
+    right: 25px;
+    z-index: 2;
+}
+
+.KombiBakimiSlider .slick-prev:before,
+.KombiBakimiSlider .slick-next:before {
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+.KombiBakimiInfo {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 30px;
+}
+
+.KombiBakimiInfoBox {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #a09c9c;
+    transition: 0.3s;
+}
+
+.KombiBakimiInfoBox:hover {
+    box-shadow: 0px 0px 15px 2px #000000;
+}
+
+.KombiBakimiInfoBox h2 {
+    margin-bottom: 15px;
+}
+
+.KombiBakimiInfoBox p {
+    line-height: 1.6;
+}
+
+
+@media (min-width: 300px) and (max-width: 992px) {
+    .KombiBakimiImg {
+        height: 300px;
+        width: auto;
+
+    }
+
+    .KombiBakimiTexts {
+        padding-top: 50px;
+
+    }
+
+
+    .KombiBakimiH1 {
+        padding-top: 0px;
+    }
+
+    .desktopBreak {
+        display: inline;
+    }
+
+    .desktopBreak2 {
+        display: none;
+    }
+
+
+    /* Slick İle Slider*/
+    .KombiBakimiSlider {
+        margin: 50px 0;
+        margin-bottom: 150px;
+    }
+
+    .KombiSlide {
+        min-height: 300px;
+        padding: 40px 50px;
+    }
+
+    .KombiSlide h2 {
+        font-size: 27px;
+    }
+
+    .KombiSlide p {
+        font-size: 15px;
+    }
+
+
+    /* Slider Bitti*/
+
+
+}

@@ -1,0 +1,634 @@
+.PetekBakimiImg {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    width: 100%;
+}
+
+.PetekBakimiImg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("../images/PetekBakimi.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: blur(5px);
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+.PetekBakimiTexts {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 190px;
+
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.PetekBakimiH1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 13px;
+
+    color: black;
+    text-align: center;
+}
+
+.PetekBakimiHr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 13px;
+    width: 200px;
+}
+
+
+/* =========================
+   ANA YAZI
+========================= */
+
+.PetekBakimiDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+.PetekBakimiDiv p {
+    line-height: 1.7;
+}
+
+.desktopBreak {
+    display: inline;
+}
+
+.desktopBreak2 {
+    display: inline;
+}
+
+
+/* =========================
+   BİLGİ KARTLARI
+========================= */
+
+.PetekBakimiInfo {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: 70px auto;
+    padding: 0 30px;
+}
+
+.PetekBakimiInfoBox {
+    flex: 1;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    background-color: #a09c9c;
+
+    transition: 0.3s;
+}
+
+.PetekBakimiInfoBox:hover {
+    box-shadow: 0px 0px 15px 2px #000000;
+    transform: translateY(-5px);
+}
+
+.PetekInfoNumber {
+    display: block;
+
+    margin-bottom: 15px;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.PetekBakimiInfoBox h2 {
+    margin-bottom: 15px;
+}
+
+.PetekBakimiInfoBox p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* =========================
+   NEDEN PETEK TEMİZLİĞİ
+========================= */
+
+.PetekNeden {
+    width: 100%;
+    max-width: 1150px;
+
+    margin: 100px auto;
+
+    padding: 0 30px;
+
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* SOL TARAF */
+
+.PetekNedenText {
+    width: 100%;
+}
+
+.PetekSectionNumber {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #88b0c3;
+}
+
+.PetekNedenText h2 {
+    margin: 0;
+
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.PetekNedenText hr {
+    width: 100px;
+
+    margin: 20px 0;
+
+    margin-left: 0;
+}
+
+.PetekNedenText p {
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* SAĞ TARAF */
+
+.PetekNedenCards {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* TEK TEK KART */
+
+.PetekNedenCard {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 22px 25px;
+
+    box-sizing: border-box;
+
+    background-color: #f5f5f5;
+
+    border-radius: 8px;
+
+    border-left: 4px solid #88b0c3;
+
+    transition: 0.3s;
+}
+
+.PetekNedenCard:hover {
+    transform: translateX(6px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+
+/* NUMARA */
+
+.PetekCardNumber {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background-color: #88b0c3;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* KART YAZILARI */
+
+.PetekNedenCard h3 {
+    margin: 0 0 7px 0;
+
+    font-size: 19px;
+}
+
+.PetekNedenCard p {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    color: #555;
+}
+
+
+/* =========================
+   SLIDER
+========================= */
+
+.PetekBakimiSlider {
+    width: 100%;
+
+    margin: 70px 0;
+
+    overflow: hidden;
+}
+
+.PetekSlide {
+    min-height: 350px;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 50px 30px;
+
+    background-color: #88b0c3;
+    color: white;
+
+    box-sizing: border-box;
+}
+
+.PetekSlide span {
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.PetekSlide h2 {
+    font-size: 36px;
+
+    margin: 0 0 20px 0;
+}
+
+.PetekSlide p {
+    max-width: 700px;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* SLICK */
+
+.PetekBakimiSlider .slick-dots {
+    bottom: 20px;
+}
+
+.PetekBakimiSlider .slick-prev {
+    left: 25px;
+    z-index: 2;
+}
+
+.PetekBakimiSlider .slick-next {
+    right: 25px;
+    z-index: 2;
+}
+
+.PetekBakimiSlider .slick-prev:before,
+.PetekBakimiSlider .slick-next:before {
+    font-size: 30px;
+}
+
+
+/* =========================
+   ALT CTA
+========================= */
+
+.PetekCTA {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    padding: 80px 30px;
+
+    background-color: #f7f7f7;
+}
+
+.PetekCTA h2 {
+    margin: 0;
+
+    font-size: 30px;
+}
+
+.PetekCTA p {
+    max-width: 650px;
+
+    margin: 15px 0 0 0;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   MOBİL
+========================= */
+
+@media (min-width: 300px) and (max-width: 992px) {
+
+    .PetekBakimiImg {
+        height: 300px;
+        width: 100%;
+    }
+
+    .PetekBakimiTexts {
+        padding: 50px 20px 0;
+    }
+
+    .PetekBakimiH1 {
+        padding-top: 0;
+        font-size: 28px;
+    }
+
+
+    /* ANA YAZI */
+
+    .PetekBakimiDiv {
+        margin: 35px auto;
+        padding: 0 20px;
+    }
+
+    .PetekBakimiDiv p {
+        line-height: 1.65;
+        font-size: 15px;
+    }
+
+    .desktopBreak {
+        display: inline;
+    }
+
+    .desktopBreak2 {
+        display: none;
+    }
+
+
+    /* BİLGİ KARTLARI */
+
+    .PetekBakimiInfo {
+        flex-direction: column;
+
+        gap: 20px;
+
+        margin: 50px auto;
+
+        padding: 0 20px;
+    }
+
+    .PetekBakimiInfoBox {
+        padding: 25px 20px;
+    }
+
+    .PetekBakimiInfoBox h2 {
+        font-size: 22px;
+    }
+
+    .PetekBakimiInfoBox p {
+        font-size: 15px;
+    }
+
+
+    /* =========================
+       NEDEN PETEK
+    ========================= */
+
+    .PetekNeden {
+        display: flex;
+        flex-direction: column;
+
+        gap: 35px;
+
+        margin: 70px auto;
+
+        padding: 0 20px;
+
+        align-items: stretch;
+    }
+
+    .PetekNedenText h2 {
+        font-size: 28px;
+    }
+
+    .PetekNedenText p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* SAĞ KARTLAR */
+
+    .PetekNedenCards {
+        width: 100%;
+
+        gap: 15px;
+    }
+
+    .PetekNedenCard {
+        padding: 20px;
+
+        gap: 15px;
+    }
+
+    .PetekCardNumber {
+        width: 40px;
+        height: 40px;
+
+        font-size: 13px;
+    }
+
+    .PetekNedenCard h3 {
+        font-size: 18px;
+    }
+
+    .PetekNedenCard p {
+        font-size: 14px;
+    }
+
+
+    /* SLIDER */
+
+    .PetekBakimiSlider {
+        margin: 50px 0;
+        margin-bottom: 80px;
+    }
+
+    .PetekSlide {
+        min-height: 300px;
+
+        padding: 40px 50px;
+    }
+
+    .PetekSlide span {
+        font-size: 16px;
+    }
+
+    .PetekSlide h2 {
+        font-size: 27px;
+
+        margin-bottom: 15px;
+    }
+
+    .PetekSlide p {
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+    .PetekBakimiSlider .slick-prev {
+        left: 10px;
+    }
+
+    .PetekBakimiSlider .slick-next {
+        right: 10px;
+    }
+
+
+    /* CTA */
+
+    .PetekCTA {
+        padding: 60px 20px;
+    }
+
+    .PetekCTA h2 {
+        font-size: 24px;
+    }
+
+    .PetekCTA p {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================
+   ÇOK KÜÇÜK EKRAN
+========================= */
+
+@media (min-width: 200px) and (max-width: 300px) {
+
+    .PetekBakimiImg {
+        height: 280px;
+        width: 100%;
+    }
+
+    .PetekBakimiTexts {
+        padding: 40px 15px 0;
+    }
+
+    .PetekBakimiH1 {
+        font-size: 23px;
+    }
+
+    .PetekBakimiDiv {
+        padding: 0 15px;
+    }
+
+    .PetekSlide {
+        padding: 35px 35px;
+    }
+
+    .PetekSlide h2 {
+        font-size: 23px;
+    }
+
+    .PetekSlide p {
+        font-size: 14px;
+    }
+
+    .PetekNeden {
+        padding: 0 15px;
+    }
+
+    .PetekNedenText h2 {
+        font-size: 24px;
+    }
+
+    .PetekNedenCard {
+        padding: 16px;
+    }
+
+    .PetekCardNumber {
+        width: 35px;
+        height: 35px;
+    }
+
+}

@@ -1,0 +1,14 @@
+.homeCard {
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.detailsButton {
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    background-color: dark;
+    color: white;
+}
