@@ -4,14 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <script>
-        const path = window.location.pathname;
-
-        if (path.startsWith('/BursaKlimaKombi/')) {
-            const redirect = '/BursaKlimaKombi/?redirect=' +
-                encodeURIComponent(path + window.location.search + window.location.hash);
-
-            window.location.replace(redirect);
-        }
+        sessionStorage.redirect = location.href;
+        location.replace('/BursaKlimaKombi/');
     </script>
 </head>
 
